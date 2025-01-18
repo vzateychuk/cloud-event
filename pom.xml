@@ -10,8 +10,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>client</module>
         <module>server</module>
+        <module>client</module>
     </modules>
 
     <properties>
@@ -35,6 +35,11 @@
                 <artifactId>cloudevents-http-basic</artifactId>
                 <version>${cloudevents.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.cloudevents</groupId>
+                <artifactId>cloudevents-json-jackson</artifactId>
+                <version>${cloudevents.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -44,7 +49,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.9.0</version>
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>

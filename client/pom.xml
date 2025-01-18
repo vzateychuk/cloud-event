@@ -22,5 +22,9 @@
             <groupId>io.cloudevents</groupId>
             <artifactId>cloudevents-core</artifactId>
         </dependency>
+        <dependency>
+            <groupId>io.cloudevents</groupId>
+            <artifactId>cloudevents-json-jackson</artifactId>
+        </dependency>
     </dependencies>
 </project>
